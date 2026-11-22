@@ -8,4 +8,4 @@
 * **Art:** I used the open-source platform krita for art
 * **Music:** I used reaper for the music production
 
-<img width="893" height="500" alt="Screenshot 2026-11-22 174957" src="https://github.com/user-attachments/assets/98d63f57-e94f-4515-b55e-450d0f8a3307" />
+<img width="977" height="547" alt="Screenshot 2026-11-22 175719" src="https://github.com/user-attachments/assets/e34adddd-1f33-43df-aa4a-5d835ee45f29" />
