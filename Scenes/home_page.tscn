@@ -1,3 +1,39 @@
 [gd_scene format=3 uid="uid://da6c8c0pqynrq"]
 
+[ext_resource type="Texture2D" uid="uid://bfbvtgiphwy1m" path="res://Images/OnlyBaground without start or heading.png" id="1_3e5ya"]
+[ext_resource type="Script" uid="uid://d2kvsfswsxfj5" path="res://Code/home_page.gd" id="1_3uk7k"]
+[ext_resource type="Texture2D" uid="uid://lpur7tefkxvg" path="res://Images/Start button.png" id="2_3uk7k"]
+
+[sub_resource type="SystemFont" id="SystemFont_mimud"]
+font_names = PackedStringArray("Segoe UI")
+font_weight = 300
+subpixel_positioning = 0
+
 [node name="Home page" type="Node2D" unique_id=340498750]
+script = ExtResource("1_3uk7k")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1211777947]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_3e5ya")
+
+[node name="GameTittle" type="Label" parent="Background" unique_id=1001914849]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 261.0
+offset_right = 877.0
+offset_bottom = 366.0
+theme_override_colors/font_outline_color = Color(0.19607843, 0.38431373, 0.2, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = SubResource("SystemFont_mimud")
+theme_override_font_sizes/font_size = 76
+text = "Apricus TD"
+horizontal_alignment = 1
+
+[node name="Start" type="TextureButton" parent="Background" unique_id=300548816]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 518.0
+offset_right = 790.0
+offset_bottom = 610.0
+texture_normal = ExtResource("2_3uk7k")
