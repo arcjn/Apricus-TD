@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://yc6gr5tgpcgb"]
 
+[ext_resource type="Script" uid="uid://caewxo8o7lsv6" path="res://Code/level_select_screen.gd" id="1_6byg0"]
 [ext_resource type="Texture2D" uid="uid://cddxm0hjwkg22" path="res://Images/LevelSelectBagroung.png" id="1_cmltv"]
-[ext_resource type="Script" uid="uid://c15nclyhv4042" path="res://backgroung.gd" id="2_ehhal"]
 [ext_resource type="Texture2D" uid="uid://bx5anlufcb0er" path="res://Images/Level Select Tiles/T1.png" id="3_axn1m"]
 [ext_resource type="Texture2D" uid="uid://c6tgnp26v5avb" path="res://Images/Level Select Tiles/T2.png" id="4_6byg0"]
 [ext_resource type="Texture2D" uid="uid://dt2veqyqm243" path="res://Images/Level Select Tiles/3 stars all 0.png" id="4_p0svx"]
@@ -15,13 +15,28 @@
 [ext_resource type="Texture2D" uid="uid://darvr46d044yj" path="res://Images/Level Select Tiles/T9.png" id="11_enecf"]
 [ext_resource type="Texture2D" uid="uid://bsrydmqmqst8l" path="res://Images/Level Select Tiles/T10.png" id="12_yks0j"]
 
+[sub_resource type="GDScript" id="GDScript_p0svx"]
+script/source = "extends TextureRect
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
 [node name="level_select_screen" type="Node2D" unique_id=1781064770]
+script = ExtResource("1_6byg0")
 
 [node name="Backgroung" type="TextureRect" parent="." unique_id=1832118188]
 offset_right = 1152.0
 offset_bottom = 648.0
 texture = ExtResource("1_cmltv")
-script = ExtResource("2_ehhal")
+script = SubResource("GDScript_p0svx")
 
 [node name="B1" type="TextureButton" parent="Backgroung" unique_id=1428576287]
 layout_mode = 0
@@ -39,13 +54,13 @@ offset_right = 140.0
 offset_bottom = 108.0
 texture = ExtResource("4_p0svx")
 
-[node name="B2" type="TextureRect" parent="Backgroung" unique_id=542084136]
+[node name="B2" type="TextureButton" parent="Backgroung" unique_id=1431702574]
 layout_mode = 0
 offset_left = 333.0
 offset_top = 167.0
 offset_right = 484.0
 offset_bottom = 318.0
-texture = ExtResource("4_6byg0")
+texture_normal = ExtResource("4_6byg0")
 
 [node name="Level2" type="TextureRect" parent="Backgroung/B2" unique_id=1453088631]
 layout_mode = 0
