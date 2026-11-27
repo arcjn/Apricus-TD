@@ -1,10 +1,18 @@
 [gd_scene format=3 uid="uid://do1rumixlo5il"]
 
+[ext_resource type="Texture2D" uid="uid://dl5c56mj115ck" path="res://Images/Only grass baground.png" id="1_8ffim"]
 [ext_resource type="Texture2D" uid="uid://b438i2jv2xqu5" path="res://Images/Cloud.png" id="1_vk57k"]
 
 [node name="Level_1" type="Node2D" unique_id=1531739481]
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=1346531920]
+[node name="Grass" type="TextureRect" parent="." unique_id=819905035]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_8ffim")
+
+[node name="Clouds" type="TextureRect" parent="." unique_id=1346531920]
 offset_right = 1152.0
 offset_bottom = 648.0
 texture = ExtResource("1_vk57k")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=557005701]
