@@ -1,0 +1,12 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://bls63lfej6wqm" path="res://Images/Building_and_path/path.png" id="1_path"]
+[ext_resource type="Script" path="res://Code/path_stripes.gd" id="2_stripes"]
+
+[node name="PathStart" type="Sprite2D" unique_id=1406217733 groups=["Path", "PathStart"]]
+texture = ExtResource("1_path")
+centered = false
+
+[node name="Stripes" type="Node2D" parent="." unique_id=1406217734]
+script = ExtResource("2_stripes")
+color = Color(0.6862745, 0.77254903, 0.45490196, 1)

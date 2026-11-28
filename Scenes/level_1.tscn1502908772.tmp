@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://do1rumixlo5il"]
+
+[ext_resource type="Texture2D" uid="uid://dl5c56mj115ck" path="res://Images/Only grass baground.png" id="1_8ffim"]
+[ext_resource type="Texture2D" uid="uid://b438i2jv2xqu5" path="res://Images/Cloud.png" id="1_vk57k"]
+[ext_resource type="Script" uid="uid://cqt53y6ecn1yb" path="res://Scenes/color_rect.gd" id="3_6444e"]
+[ext_resource type="PackedScene" uid="uid://bgish325cmdau" path="res://Scenes/b_1.tscn" id="4_6444e"]
+[ext_resource type="PackedScene" uid="uid://coqkkjqlqsy30" path="res://Scenes/path.tscn" id="5_evi0p"]
+
+[node name="Level_1" type="Node2D" unique_id=1531739481]
+
+[node name="Grass" type="TextureRect" parent="." unique_id=819905035]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_8ffim")
+
+[node name="Clouds" type="TextureRect" parent="." unique_id=1346531920]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_vk57k")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=557005701]
+script = ExtResource("3_6444e")
+
+[node name="B1" parent="." unique_id=1502071906 instance=ExtResource("4_6444e")]
+position = Vector2(139, 124)
+
+[node name="Path" parent="." unique_id=1769693299 instance=ExtResource("5_evi0p")]
+position = Vector2(219, 124)
+
+[node name="Path2" parent="." unique_id=1123225153 instance=ExtResource("5_evi0p")]
+position = Vector2(299, 124)
+
+[node name="Path3" parent="." unique_id=1715690653 instance=ExtResource("5_evi0p")]
+position = Vector2(379, 124)
+
+[node name="Path4" parent="." unique_id=789756455 instance=ExtResource("5_evi0p")]
+position = Vector2(459, 124)
+
+[node name="Path5" parent="." unique_id=62579435 instance=ExtResource("5_evi0p")]
+position = Vector2(459, 204)
+
+[node name="Path6" parent="." unique_id=2096568748 instance=ExtResource("5_evi0p")]
+position = Vector2(459, 284)

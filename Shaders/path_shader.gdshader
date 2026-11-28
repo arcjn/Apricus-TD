@@ -5,12 +5,12 @@ uniform sampler2D cell_map : filter_nearest;
 uniform ivec2 map_size;
 uniform float cell = 80.0;
 
-uniform vec2 building_offset = vec2(8);
+uniform vec2 building_offset = vec2(4);
 uniform float building_blur = 3.1;
 uniform vec3 building_tint = vec3(0.6);
-uniform vec2 path_offset = vec2(8);
-uniform float path_blur = 2.1;
-uniform vec3 path_tint = vec3(0.57);
+uniform vec2 path_offset = vec2(6);
+uniform float path_blur = 5.1;
+uniform vec3 path_tint = vec3(0.663, 0.596, 0.524);
 
 varying vec2 p;
 
@@ -19,6 +19,7 @@ void vertex() {
 }
 
 float phi(float z){
+	z = clamp(z, -6.0, 6.0);
 	return 0.5*(1.0 + tanh(0.79788*(z + 0.044715*z*z*z)));
 }
 
@@ -48,7 +49,7 @@ void fragment() {
 			if (k.r > 0.5){
 				building_shadow += blurred_square(lo + building_offset, building_blur);
 			}
-			if (k.r < 0.5){
+			if (k.g < 0.5){
 				path_shadow += blurred_square(lo + path_offset, path_blur);
 			}
 		}

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bgish325cmdau"]
+
+[ext_resource type="Texture2D" uid="uid://c815f2liyqsu8" path="res://Images/Building_and_path/B1.png" id="1_ydtsf"]
+
+[node name="B1" type="Sprite2D" unique_id=1502071906 groups=["Building"]]
+z_index = 2
+texture = ExtResource("1_ydtsf")
+centered = false
